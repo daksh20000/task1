@@ -33,7 +33,7 @@ export default function Home() {
   const addToCart = (product) => {
     alert(`${product.title} has been added to your cart!`)
   }
-  if(true){
+  if(allProducts.length ==0){
     
       return <ProductCardShimmer/>
   }

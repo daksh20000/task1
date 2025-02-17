@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import ProductCard from "@/components/ProductCard"
+import ProductCardShimmer from "@/components/ShimmerCard"
 
 export default function Home() {
 
@@ -32,6 +33,10 @@ export default function Home() {
   const addToCart = (product) => {
     alert(`${product.title} has been added to your cart!`)
   }
+  if(true){
+    
+      return <ProductCardShimmer/>
+  }
 
   return (
     <div className="flex flex-wrap justify-center items-center min-h-screen bg-gray-100 p-6">
@@ -55,7 +60,7 @@ export default function Home() {
           Load More
         </button>
       </div>
-      ):<div className="mt-6 text-center font-bold">You reached the end of it... <br /> <br /><u >Drink some water, Might be tired</u></div> }
+      ): <div className="mt-6 text-center font-bold">You reached the end of it... <br /> <br /><u >Drink some water, Might be tired</u></div> }
     </div>
   );
 }
